@@ -2,6 +2,7 @@ import React from 'react'
 import CIcon from '@coreui/icons-react'
 import {
   cilBell,
+  cilCart,
   cilCalculator,
   cilChartPie,
   cilCursor,
@@ -25,6 +26,58 @@ const _nav = [
       color: 'info',
       text: 'NEW',
     },
+  },
+  {
+    component: CNavTitle,
+    name: 'APPLICATIONS',
+  },
+  {
+    component: CNavGroup,
+    name: 'Ecommerce',
+    to: '/ecommerce',
+    icon: <CIcon icon={cilCart} customClassName="nav-icon" />,
+    items: [
+      {
+        component: CNavItem,
+        name: 'Products',
+        to: '/ecommerce/products',
+      },
+      {
+        component: CNavItem,
+        name: 'Product Detail',
+        to: '/ecommerce/product-detail',
+      },
+      {
+        component: CNavItem,
+        name: 'Orders',
+        to: '/ecommerce/orders',
+      },
+      {
+        component: CNavItem,
+        name: 'Customers',
+        to: '/ecommerce/customers',
+      },
+      {
+        component: CNavItem,
+        name: 'Cart',
+        to: '/ecommerce/cart',
+      },
+      {
+        component: CNavItem,
+        name: 'Checkout',
+        to: '/ecommerce/Checkout',
+      },
+      {
+        component: CNavItem,
+        name: 'Shops',
+        to: '/ecommerce/shops',
+      },
+      {
+        component: CNavItem,
+        name: 'Add Product',
+        to: '/ecommerce/add-product',
+      },
+    ],
   },
   {
     component: CNavTitle,
